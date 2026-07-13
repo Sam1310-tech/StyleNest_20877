@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_black">#000000</color>
+    <color name="brand_white">#FFFFFF</color>
+    <color name="brand_gold">#C5A059</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_dark">#333333</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
