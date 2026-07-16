@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        loadCategoryImages();
 
         // Bind the "SHOP NOW" element button
         Button btnExplore = findViewById(R.id.btnExplore);
@@ -66,6 +69,13 @@ public class MainActivity extends AppCompatActivity {
             }
             return true;
         });
+    }
+
+    private void loadCategoryImages() {
+        Glide.with(this).load("https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80").into((android.widget.ImageView) findViewById(R.id.imgBanner));
+        Glide.with(this).load("https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&q=80").into((android.widget.ImageView) findViewById(R.id.imgCategoryShirts));
+        Glide.with(this).load("https://images.unsplash.com/photo-1542272604-787c3835535d?w=500&q=80").into((android.widget.ImageView) findViewById(R.id.imgCategoryTrousers));
+        Glide.with(this).load("https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80").into((android.widget.ImageView) findViewById(R.id.imgCategoryAccessories));
     }
 
     private void setupFeaturedProducts() {

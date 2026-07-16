@@ -92,6 +92,9 @@ public class ProductlistActivity extends AppCompatActivity {
 
             holder.itemView.setOnClickListener(v -> {
                 android.content.Intent intent = new android.content.Intent(v.getContext(), ProductDetailActivity.class);
+                intent.putExtra("product_name", product.name);
+                intent.putExtra("product_price", product.price);
+                intent.putExtra("product_image", product.imageUrl);
                 v.getContext().startActivity(intent);
             });
         }

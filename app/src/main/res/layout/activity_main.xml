@@ -66,8 +66,15 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/brand_black"
                     android:padding="24dp">
+
+                    <ImageView
+                        android:id="@+id/imgBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="-24dp"
+                        android:alpha="0.6" />
 
                     <TextView
                         android:id="@+id/bannerTitle"
@@ -131,14 +138,17 @@
                         app:cardCornerRadius="8dp">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/gray_light">
+                            android:layout_height="match_parent">
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_centerInParent="true"
-                                android:src="@android:drawable/ic_menu_sort_by_size"
-                                app:tint="@color/brand_black" />
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@android:drawable/ic_menu_gallery"
+                                android:id="@+id/imgCategoryShirts" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#40000000" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -146,7 +156,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_margin="12dp"
                                 android:text="SHIRTS"
-                                android:textColor="@color/brand_black"
+                                android:textColor="@color/brand_white"
                                 android:textStyle="bold"
                                 android:letterSpacing="0.1" />
                         </RelativeLayout>
@@ -164,14 +174,17 @@
                         app:cardCornerRadius="8dp">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/gray_light">
+                            android:layout_height="match_parent">
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_centerInParent="true"
-                                android:src="@android:drawable/ic_menu_view"
-                                app:tint="@color/brand_black" />
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@android:drawable/ic_menu_gallery"
+                                android:id="@+id/imgCategoryTrousers" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#40000000" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -179,7 +192,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_margin="12dp"
                                 android:text="TROUSERS"
-                                android:textColor="@color/brand_black"
+                                android:textColor="@color/brand_white"
                                 android:textStyle="bold"
                                 android:letterSpacing="0.1" />
                         </RelativeLayout>
@@ -196,14 +209,17 @@
                         app:cardCornerRadius="8dp">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@color/gray_light">
+                            android:layout_height="match_parent">
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
-                                android:layout_centerInParent="true"
-                                android:src="@android:drawable/btn_star_big_on"
-                                app:tint="@color/brand_black" />
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@android:drawable/ic_menu_gallery"
+                                android:id="@+id/imgCategoryAccessories" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#40000000" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -211,7 +227,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_margin="12dp"
                                 android:text="ACCESSORIES"
-                                android:textColor="@color/brand_black"
+                                android:textColor="@color/brand_white"
                                 android:textStyle="bold"
                                 android:letterSpacing="0.1" />
                         </RelativeLayout>
