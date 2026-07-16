@@ -11,10 +11,10 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <View
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@color/brand_gold" />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_stylenest_logo" />
 
         <TextView
             android:layout_width="wrap_content"

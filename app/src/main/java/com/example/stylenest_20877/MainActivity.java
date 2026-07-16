@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
         List<ProductlistActivity.Product> featured = new ArrayList<>();
-        featured.add(new ProductlistActivity.Product("Urban Slim Shirt", "KES 2,500", "SHIRTS"));
-        featured.add(new ProductlistActivity.Product("Classic Chinos", "KES 3,200", "TROUSERS"));
-        featured.add(new ProductlistActivity.Product("Denim Jacket", "KES 4,500", "SHIRTS"));
-        featured.add(new ProductlistActivity.Product("Cotton Polo", "KES 1,800", "SHIRTS"));
+        featured.add(new ProductlistActivity.Product("Urban Slim Shirt", "KES 2,500", "SHIRTS", "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&q=80"));
+        featured.add(new ProductlistActivity.Product("Classic Chinos", "KES 3,200", "TROUSERS", "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=500&q=80"));
+        featured.add(new ProductlistActivity.Product("Denim Jacket", "KES 4,500", "SHIRTS", "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500&q=80"));
+        featured.add(new ProductlistActivity.Product("Cotton Polo", "KES 1,800", "SHIRTS", "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=500&q=80"));
 
         recyclerView.setAdapter(new ProductlistActivity.ProductAdapter(featured));
     }
